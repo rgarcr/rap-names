@@ -12,7 +12,7 @@ btn.addEventListener('click', async (event) => {
 
 async function getRapper(name) {
     try {
-        const resp = await fetch(`http://localhost:8000/api/${name}`)
+        const resp = await fetch(`https://rap-names-9n76.onrender.com/api/${name}`)
         const data = await resp.json();
         console.log(data);
         return data.birthName;
